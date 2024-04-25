@@ -1,0 +1,197 @@
+/**
+ #40679E
+ #1B3C73
+ #FFCAD4
+ #FF407D
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/** Header*/
+
+.clase_fondo {
+    background-image: url(./assets/FondoAbanRosa.png);
+  
+   
+}
+.clase_titulo_fondo1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clase_titulo_fondo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clase_titulo{
+    padding: 2rem;
+
+}
+
+.clase_imag{
+    border-radius: 10px;
+    width:100px;
+    height:70px;
+    padding: 1rem;
+   
+
+}
+
+/**Nav**/
+
+
+.clase_fondoNav {
+    background-color:  #FFCAD4;
+    
+
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+
+}
+
+/**index*/
+/**home**/
+.clase_imagHome{
+    height:550px;
+    width:1350px;
+    opacity: 85%;
+
+}
+
+.FondoHome{
+    background-image: url(./assets/FondoAbanRosa.png);
+    display: block;
+}
+
+
+/**fragancias*/
+.clase_frag1{
+    border-radius: 15px;
+    border-style: groove;
+    border-color: #40679E;
+    width: 300px;
+    height: 200px;
+
+}
+
+.section_Fragancias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background: #FFCAD4;
+    opacity: 70%;
+}
+
+/**contacto**/
+
+
+.half-section {
+    width: 50%;
+}
+
+aside {
+    padding-left: 100px;
+    padding-right: 100px;
+  
+}
+.aside_img{
+    opacity: 60%;
+    margin-top: 45px;
+    border-radius: 15px;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 30px;
+    background-color: #FFCAD4;
+
+}
+
+h2{
+    color: #1B3C73;
+
+}
+.text-section {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FF407D;
+    letter-spacing: 1px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    background-color: #FF407D;
+    color: var(--primary-color-dark);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-right: 80px;
+   
+}
+
+.input-field {
+    border: 0;
+    background-color:  #1B3C73;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: .25rem 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.input-field:focus {
+    outline: 0;
+    border-bottom-width: 3px;
+}
+
+.btn-send-message {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #FFCAD4;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    transition: all 250ms;
+    color: #40679E;
+}
+
+.btn-send-message:hover,
+.btn-send-message:focus {
+    background-color: #1B3C73;
+    color: #FF407D;
+}
