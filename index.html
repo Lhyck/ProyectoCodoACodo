@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +7,25 @@
     <title>Tienda Virtual </title>
 </head>
 <body>
-    <header class="clase_fondo" id="home" >
-        <div class="clase_titulo_fondo1">
-            <img class="clase_imag" src="./assets/IconAzul.jpg" ></img>
+    <header>
+        <div class="section_banner">
+        <img class="img_banner" src="/assets/FondoRosaFlor.png" alt="banner">
+        <div class="logo">
+            <img class="img_logo" src="./assets/IconAzul.jpg" ></img>
         </div>
-       
-      <div class="clase_titulo_fondo2">
-        <h1>Aromas que Hechizan </h1>
-      </div>
-      
-            
+        <div class="title_header"><h1>Aromas que Hechizan </h1></div> 
+        </div>        
     </header>
+
     <nav class=" clase_fondoNav">
-       <a href="#home">Inicio<i></i></a>
-       <a href="#fragancias"><i>Fragancias</i></a>
-       <a href="#catalogo"><i>Catalogo</i></a>
-       <a href="#contacto"><i>Contacto</i></a>
+       <a class="nav_item" href="#home"><i>Inicio</i></a>
+       <a class="nav_item" href="#fragancias"><i>Fragancias</i></a>
+       <a class="nav_item" href="#catalogo"><i>Catalogo</i></a>
+       <a class="nav_item" href="#contacto"><i>Contacto</i></a>
     </nav>
     <main>
-        <section >
-            <div>
-                <img class="clase_imagHome" src="./assets/FondosFormaRosa.png" >
-            </div>
-        </section>
-        <section  class="section_Fragancias">
-            <div id="fragancias">
+        <section  class="section_fragancias">
+            <div class="item_fragancias">
                 <div >
                     <img class="clase_frag1" src="./assets/Fragancias/FB_IMG_1658612593647~2.jpg">
                 </div>
@@ -50,7 +44,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="item_fragancias">
                 <div >
                     <img class="clase_frag1" src="./assets/Fragancias/FB_IMG_1658612596358~2.jpg">
                 </div>
@@ -68,7 +62,7 @@
                 <small>Presentaciones:  </small>
                 </div>
             </div>
-            <div>
+            <div class="item_fragancias">
                 <div >
                     <img class="clase_frag1" src="./assets/Fragancias/IMG-20220724-WA0034.jpg">
                 </div>
@@ -87,7 +81,7 @@
                 </div>
             </div>
                 
-            <div id="fragancias">
+            <div class="item_fragancias">
                 <div >
                     <img class="clase_frag1" src="./assets/Fragancias/IMG-20220724-WA0029.jpg">
                 </div>
@@ -106,7 +100,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="item_fragancias">
                 <div >
                     <img class="clase_frag1" src="./assets/Fragancias/IMG-20220724-WA0044.jpg">
                 </div>
@@ -124,7 +118,7 @@
                 <small>Presentaciones:  </small>
                 </div>
             </div>
-            <div>
+            <div class="item_fragancias">
                 <div >
                     <img class="clase_frag1" src="./assets/Fragancias/img_7_1681814330978.jpg">
                 </div>
@@ -144,11 +138,11 @@
             </div>
                 
         </section>
-        <section id="contacto" class="content">
-            <aside>
+        <section id="contacto" class="section_contact">
+            <div class="item_contacto">
                 <img class="aside_img" src="./assets/IMG-20230503-WA0137.jpg" width="600px" height="500px"></img>
-            </aside>
-            <aside class="half-section text-section">
+            </div>
+            <div class="half-section text-section">
                 <form action="https://formsubmit.co/caminito@gmail.com" method="POST" id="form1">
                     <!--Titulo-->
                     <h2>Escribeme y descubre tu aroma para hechizar !!!</h2>
@@ -173,13 +167,46 @@
     
                 </form>
                 <script src="/main.js"></script>
-            </aside>
+            </div>
     
     
         </section>
     </main>
-    <footer>
-
+    <footer class="contenedor_pcipal_footer">
+        <section class="item footer1">
+            <h1 class="header_footer">CONTACTO</h1>
+            <div class="contenedor_menu_footer">
+                    <p>Horarios de atención: Lunes a viernes 9 a 17hs</p>
+                    <p>Telefono 11-5555-4444</p>
+                    <p>Dirección Plaza de Mayo</p>
+                    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.413946342771!2d-58.38310044999999!3d-34.6078662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1711822908602!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>  
+            </div>
+        </section>
+        <section class="item footer2">
+            <h1 class="header_footer">INFORMACION</h1>
+            <div class="contenedor_menu_footer">
+                    <ul class="footer_list">
+                        <li class="footer_list_item"><a href="http://">QUIENES SOMOS</a></li>
+                        <li class="footer_list_item"><a href="http://">PERFUMES HOMBRE</a></li>
+                        <li class="footer_list_item"><a href="http://">PERFUMES MUJER</a></li>
+                        <li class="footer_list_item"><a href="http://">PREGUNTAS FRECUENTES</a></li>
+                    </ul>
+            </div>
+        </section>
+        <section class="item footer3">
+            <h1 class="header_footer">NUESTRAS REDES</h1>
+            <div class="contenedor_menu_footer">
+                    <ul class="footer_list">
+                        <li class="footer_list_item"><a href="http://">Facebook</a></li>
+                        <li class="footer_list_item"><a href="http://">Instagram</a></li>
+                        <li class="footer_list_item"><a href="http://">X</a></li>
+                        <li class="footer_list_item"><a href="http://">Linkedin</a></li>
+                    </ul>
+            </div>
+        </section>   
+        <div class="item final"> @Copiwrite</div>
     </footer>
+        
+    
 </body>
 </html>

@@ -10,49 +10,46 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
 }
+body{
+    min-height: 100dvh;
 
+}
 /** Header*/
+.section_banner{
+    position: relative;
+    margin-top: 0;
+    width: 100dvw;
+        .img_banner{
+            width: 100%;
+            height: 100dvh;
+            object-fit: cover;
+        }
+        } 
+        .logo{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+             .img_logo{
+                border-radius: 10px;
+                width:100px;
+                height:70px;
+                padding: 1rem;           
+            }
+        }
+        .title_header{
+            position: absolute;
+            width: 80%;
+            bottom: 50%;
+            left: 50%;
+            font-size: 1.5rem;
+        }
 
-.clase_fondo {
-    background-image: url(./assets/FondoAbanRosa.png);
-  
-   
-}
-.clase_titulo_fondo1{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.clase_titulo_fondo2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.clase_titulo{
-    padding: 2rem;
-
-}
-
-.clase_imag{
-    border-radius: 10px;
-    width:100px;
-    height:70px;
-    padding: 1rem;
-   
-
-}
 
 /**Nav**/
-
-
 .clase_fondoNav {
     background-color:  #FFCAD4;
-    
-
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
@@ -65,17 +62,18 @@
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+        .nav_item:link{
+            text-decoration: none;
+    }
+        .nav_item:hover{
+            color:rgb(140, 35, 136);
+        }
 
 }
 
 /**index*/
 /**home**/
-.clase_imagHome{
-    height:550px;
-    width:1350px;
-    opacity: 85%;
 
-}
 
 .FondoHome{
     background-image: url(./assets/FondoAbanRosa.png);
@@ -84,52 +82,46 @@
 
 
 /**fragancias*/
-.clase_frag1{
-    border-radius: 15px;
-    border-style: groove;
-    border-color: #40679E;
-    width: 300px;
-    height: 200px;
-
-}
-
-.section_Fragancias{
+.section_fragancias{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 20px;
-    background: #FFCAD4;
     opacity: 70%;
+    width: 90%;
+    margin: 0 auto;
 }
+.item_fragancias{
+    border: 1px solid #e9e9e9;
+    gap: 25px;;
+        .clase_frag1{
+            border-radius: 15px;
+            border-style: groove;
+            border-color: #40679E;
+            width: 300px;
+            height: 200px;
+        }
+}
+
+
 
 /**contacto**/
+.section_contact {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #FFCAD4;
 
-
-.half-section {
-    width: 50%;
 }
 
-aside {
-    padding-left: 100px;
-    padding-right: 100px;
-  
-}
 .aside_img{
     opacity: 60%;
     margin-top: 45px;
     border-radius: 15px;
 }
 
-.content {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    flex-direction: row;
-    margin-top: 30px;
-    background-color: #FFCAD4;
-
-}
 
 h2{
     color: #1B3C73;
@@ -195,3 +187,60 @@ form {
     background-color: #1B3C73;
     color: #FF407D;
 }
+
+/**Footer**/
+.contenedor_pcipal_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    border: 1px solid black;
+    padding: 10px;
+        .item{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        background-color: antiquewhite;
+        flex-grow: 1;
+        flex-basis: 30%;
+        width: 30%;
+        margin: 10px;
+        padding: 10px;
+        border: 1px green solid;
+        }
+}
+.header_footer{
+   text-decoration: underline;
+   margin-left: 5px;
+   padding-bottom: 10px;
+
+}
+.contenedor_menu_footer .footer_list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    & a:link{
+        text-decoration: none;
+        color: #565656;
+    }    
+}
+
+.item .final{
+    position: absolute;
+    bottom: 0;
+}
+/* @media screen and (max-width:640px) { 
+    .contenedor_pcipal_footer{
+        
+   
+} }*/ 
+/* @media screen and (min-width: 640px) and (max-width: 1280px) { 
+    .contenedor_pcipal_footer{
+     
+
+    }
+    .footer {
+        
+    }
+    
+}*/
