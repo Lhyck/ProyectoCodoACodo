@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tienda Virtual </title>
 </head>
 <body>
     <header>
         <div class="section_banner">
-        <img class="img_banner" src="./assets/FondoRosaFlor.png" alt="banner">
-        <div class="logo">
-            <img class="img_logo" src="./assets/IconAzul.jpg" ></img>
-        </div>
-        <div class="title_header"><h1>Aromas que Hechizan </h1></div> 
+            <img class="img_banner" src="./assets/FondoRosaFlor.png" alt="banner">
+            <div class="logo">
+                <img class="img_logo" src="./assets/IconAzul.jpg" ></img>
+            </div>
+            <div class="title_header"><h1>Aromas que Hechizan </h1></div> 
         </div>        
     </header>
 
     <nav class=" clase_fondoNav">
-       <a class="nav_item" href="#home"><i>Inicio</i></a>
+       <a class="nav_item" href="#home"><i></i>Inicio</a>
        <a class="nav_item" href="#fragancias"><i>Fragancias</i></a>
        <a class="nav_item" href="#catalogo"><i>Catalogo</i></a>
        <a class="nav_item" href="#contacto"><i>Contacto</i></a>
     </nav>
-    <main>
+    <main class="contenedor_main">
         <section  class="section_fragancias">
             <div class="item_fragancias">
                 <div >
@@ -139,37 +140,34 @@
                 
         </section>
         <section id="contacto" class="section_contact">
-            <div class="item_contacto">
-                <img class="aside_img" src="./assets/IMG-20230503-WA0137.jpg" width="600px" height="500px"></img>
-            </div>
             <div class="half-section text-section">
-                <form action="https://formsubmit.co/caminito@gmail.com" method="POST" id="form1">
+                <form class="form_contact" action="https://formsubmit.co/caminito@gmail.com" method="POST" id="form1">
                     <!--Titulo-->
                     <h2>Escribeme y descubre tu aroma para hechizar !!!</h2>
                     <br>
                     <br>
                     <!--Casilla de nombre-->
-                    <label for="name">Nombre</label>
+                    <label for="name">NOMBRE</label>
                     <input class="input-field" type="text" name="name" id="name">
     
                     <!--Casilla de email-->
-                    <label for="email">Email</label>
+                    <label for="email">EMAIL</label>
                     <input class="input-field" type="email" name="email" id="email">
     
                     <!--Casilla de texto-->
-                    <label for="message">Mensaje</label>
+                    <label for="message">MENSAJE</label>
                     <textarea class="input-field" name="message" id="message" cols="30" rows="7"></textarea>
     
                     <!--Boton enviar mensaje-->
                     <input class="btn-send-message" type="submit" id="enviar" value="Enviar">
                     <input type="hidden" name="_next" value="http://localhost:5502">
-                    <input type="hidden" name="_captcha" value="false">
-    
+                    <input type="hidden" name="_captcha" value="false">   
                 </form>
                 <script src="/main.js"></script>
             </div>
-    
-    
+            <div class="item_contacto">
+                <img class="aside_img" src="./assets/IMG-20230503-WA0137.jpg"></img>
+            </div> 
         </section>
     </main>
     <footer class="contenedor_pcipal_footer">
@@ -178,8 +176,7 @@
             <div class="contenedor_menu_footer">
                     <p>Horarios de atención: Lunes a viernes 9 a 17hs</p>
                     <p>Telefono 11-5555-4444</p>
-                    <p>Dirección Plaza de Mayo</p>
-                    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.413946342771!2d-58.38310044999999!3d-34.6078662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1711822908602!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>  
+                    <div class="contenedor_mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.413946342771!2d-58.38310044999999!3d-34.6078662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1711822908602!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>  
             </div>
         </section>
         <section class="item footer2">
@@ -187,8 +184,7 @@
             <div class="contenedor_menu_footer">
                     <ul class="footer_list">
                         <li class="footer_list_item"><a href="http://">QUIENES SOMOS</a></li>
-                        <li class="footer_list_item"><a href="http://">PERFUMES HOMBRE</a></li>
-                        <li class="footer_list_item"><a href="http://">PERFUMES MUJER</a></li>
+                        <li class="footer_list_item"><a href="http://">FRAGANCIAS</a></li>
                         <li class="footer_list_item"><a href="http://">PREGUNTAS FRECUENTES</a></li>
                     </ul>
             </div>
@@ -197,14 +193,13 @@
             <h1 class="header_footer">NUESTRAS REDES</h1>
             <div class="contenedor_menu_footer">
                     <ul class="footer_list">
-                        <li class="footer_list_item"><a href="http://">Facebook</a></li>
-                        <li class="footer_list_item"><a href="http://">Instagram</a></li>
-                        <li class="footer_list_item"><a href="http://">X</a></li>
-                        <li class="footer_list_item"><a href="http://">Linkedin</a></li>
+                        <li class="footer_list_item"><i class="social-icon fa-brands fa-facebook-f"></i><a href="#"> Facebook</a></li>
+                        <li class="footer_list_item"><i class="social-icon fa-brands fa-instagram"></i><a href="#"> Instagram</a></li>
+                        <li class="footer_list_item"><i class="social-icon fa-brands fa-x-twitter"></i><a href="#"> Twitter</a></li>
+                        <li class="footer_list_item"><i class="social-icon fa-brands fa-linkedin-in"></i><a href="#"> Linkedin</a></li>
                     </ul>
             </div>
         </section>   
-        <div class="item final"> @Copiwrite</div>
     </footer>
         
     

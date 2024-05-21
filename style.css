@@ -19,24 +19,20 @@ body{
 .section_banner{
     position: relative;
     margin-top: 0;
-    width: 100dvw;
+    min-width: 100dvw;
+    background-size: cover;
         .img_banner{
-            width: 100%;
             height: 100dvh;
             object-fit: cover;
         }
-        } 
-        .logo{
+        .img_logo{
             position: absolute;
-            top: 10%;
-            left: 10%;
-             .img_logo{
-                border-radius: 10px;
-                width:100px;
-                height:70px;
-                padding: 1rem;           
-            }
+            width:20px;
+            height: 20px; 
+            left: 50px; 
+            top: 50px;
         }
+        } 
         .title_header{
             position: absolute;
             width: 80%;
@@ -50,18 +46,18 @@ body{
 /**Nav**/
 .clase_fondoNav {
     background-color:  #FFCAD4;
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
+    width: 400px;
+    padding: 0.7rem 0.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
-    gap: 0.8rem;
+    justify-content: space-around;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    font-size: 1.25rem;
         .nav_item:link{
             text-decoration: none;
     }
@@ -71,30 +67,26 @@ body{
 
 }
 
-/**index*/
-/**home**/
+/* MAIN */
+.contenedor_main{
+    display: flex;
+    flex-direction: column;
 
-
-.FondoHome{
-    background-image: url(./assets/FondoAbanRosa.png);
-    display: block;
 }
-
-
-/**fragancias*/
+/**main - fragancias*/
 .section_fragancias{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 20px 20px;
     opacity: 70%;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 .item_fragancias{
     border: 1px solid #e9e9e9;
-    gap: 25px;;
+    gap: 25px;
         .clase_frag1{
             border-radius: 15px;
             border-style: groove;
@@ -104,59 +96,57 @@ body{
         }
 }
 
-
-
-/**contacto**/
+/**main - contacto**/
 .section_contact {
+    position: relative;
     display: flex;
-    height: 100vh;
-    width: 100%;
-    margin-top: 30px;
-    background-color: #FFCAD4;
-
+    width: 80%;
+    height: 600px;
+    margin: 30px auto;
+    
 }
 
 .aside_img{
+    position: absolute;
     opacity: 60%;
     margin-top: 45px;
+    left: 5%;
     border-radius: 15px;
+    width:600px;
+    height:500px;
+    object-fit: cover;
 }
-
-
 h2{
     color: #1B3C73;
 
 }
 .text-section {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 200px;
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #FF407D;
+    color:rgb(140, 35, 136);
+    font-size: 1rem;
+    font-weight: 800;
+    text-shadow: 1px 1px #1B3C73;
     letter-spacing: 1px;
 }
 
-.title-section {
-    display: flex;
-    align-items: center;
-    background-color: #FF407D;
-    color: var(--primary-color-dark);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 40px;
-}
-
-form {
+.form_contact {
     display: flex;
     flex-direction: column;
     margin-left: 80px;
     margin-right: 80px;
-   
+    z-index: 1;
+       
 }
 
 .input-field {
-    border: 0;
-    background-color:  #1B3C73;
+    border: 1px solid  #1B3C73;
     font: inherit;
     font-size: 1.125rem;
     padding: .25rem 0;
@@ -190,28 +180,24 @@ form {
 
 /**Footer**/
 .contenedor_pcipal_footer{
+    color:rgb(140, 35, 136);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: stretch;
-    border: 1px solid black;
     padding: 10px;
         .item{
         display: flex;
         flex-direction: column;
-        border: 1px solid red;
-        background-color: antiquewhite;
         flex-grow: 1;
         flex-basis: 30%;
         width: 30%;
         margin: 10px;
         padding: 10px;
-        border: 1px green solid;
         }
 }
 .header_footer{
-   text-decoration: underline;
-   margin-left: 5px;
+   text-align: center;
    padding-bottom: 10px;
 
 }
@@ -219,22 +205,51 @@ form {
     display: flex;
     flex-direction: column;
     list-style: none;
-    & a:link{
+    text-align: center;
+    a:link{
         text-decoration: none;
-        color: #565656;
-    }    
+        color:rgb(140, 35, 136);
+    } 
+    a:visited{
+        color:rgb(140, 35, 136);
+    }   
 }
 
-.item .final{
-    position: absolute;
-    bottom: 0;
-}
-/* @media screen and (max-width:640px) { 
+
+@media screen and (max-width:640px) { 
+    .item_fragancias{
+        width: 250px;
+    }
+    .section_contact {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        background-color: #FFCAD4;
+        height: 500px;
+        .aside_img{
+            display: none;
+        }
+    
+    }   
+
     .contenedor_pcipal_footer{
-        
+        position: relative;
+       flex-direction:column; 
+       text-align:center;
+       .item{
+          width: 100%;
+          .contenedor_mapa{
+            position: absolute;
+            width: 200px;
+            margin-top: 5px;
+            left: 20%;
+        }
+       }
+     
    
-} }*/ 
-/* @media screen and (min-width: 640px) and (max-width: 1280px) { 
+} }
+
+@media screen and (min-width: 640px) and (max-width: 1280px) { 
     .contenedor_pcipal_footer{
      
 
@@ -243,4 +258,4 @@ form {
         
     }
     
-}*/
+}
