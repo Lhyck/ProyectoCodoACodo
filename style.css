@@ -12,28 +12,23 @@
     box-sizing: border-box;
 }
 body{
+    background-image: url(/assets/foto2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100dvh;
-
+    display: flex;
+    flex-direction: column;
+    
 }
 /** Header*/
-.section_banner{
+.section_banner{   
     position: relative;
-    margin-top: 0;
-    min-width: 100dvw;
-    background-size: cover;
-        .img_banner{
-            height: 100dvh;
-            object-fit: cover;
-        }
-        .img_logo{
-            position: absolute;
-            width:20px;
-            height: 20px; 
-            left: 50px; 
-            top: 50px;
-        }
+    height: 100dvh;
         } 
         .title_header{
+            color: rgb(140, 35, 136);
             position: absolute;
             width: 80%;
             bottom: 50%;
@@ -71,6 +66,7 @@ body{
 .contenedor_main{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 
 }
 /**main - fragancias*/
@@ -98,51 +94,21 @@ body{
 
 /**main - contacto**/
 .section_contact {
-    position: relative;
     display: flex;
     width: 80%;
     height: 600px;
     margin: 30px auto;
-    
+    margin: auto;
+    h2 {
+    color: rgb(140, 35, 136);
+    }
 }
 
-.aside_img{
-    position: absolute;
-    opacity: 60%;
-    margin-top: 45px;
-    left: 5%;
-    border-radius: 15px;
-    width:600px;
-    height:500px;
-    object-fit: cover;
-}
-h2{
-    color: #1B3C73;
-
-}
-.text-section {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    right: 200px;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color:rgb(140, 35, 136);
-    font-size: 1rem;
-    font-weight: 800;
-    text-shadow: 1px 1px #1B3C73;
-    letter-spacing: 1px;
-}
 
 .form_contact {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
-    margin-right: 80px;
-    z-index: 1;
-       
+    margin: auto;     
 }
 
 .input-field {
@@ -178,6 +144,97 @@ h2{
     color: #FF407D;
 }
 
+.quienes_somos{
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(231, 204, 230, 0.2);
+    backdrop-filter: blur (5px);
+    color:  rgb(140, 35, 136);
+    h2 {
+        margin-bottom: 50px;
+        font-size: 1.50rem;
+        font-weight: 600;
+        text-align: center;
+  }
+  p{
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 1.5;
+  };
+}
+.preguntas_container {    
+    max-width: 800px;
+    height: 800px;
+    margin: 50px auto 0 auto;
+    padding: 2rem;
+     h2 {
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        color:  rgb(140, 35, 136);
+  }}
+  details { 
+    background-color: #f6f8fa;
+    width:500px;
+    margin-bottom: 1rem;   
+    border-radius: 8px;  
+    border: 1px solid #d8e0e9;
+    color:  rgb(140, 35, 136);
+    position: relative;  
+  }
+  details summary {  
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  details p {
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    background: #f6f8fa;
+    border-left: 2px solid  rgb(140, 35, 136);
+  }
+  
+  details:hover,
+  details[open] {
+    box-shadow: 5px 5px 15px #d9d9d9;
+  }
+  
+  details[open] {
+    background: #ffffff;
+  }
+  
+  details[open] summary {
+    font-weight: 600;
+  }
+  
+  details summary::before {
+    position: absolute;
+      content: "➤";    
+      font-size: 1.75rem;
+      top: 10px;
+      right: 16px;  
+  }
+  
+  details[open] summary::before {
+    -webkit-animation: rotate 0.6s ease-in-out both;
+     animation: rotate-emoji 0.6s ease-in-out both;
+  }
+  
+  @-webkit-keyframes rotate-emoji {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+  }
+
 /**Footer**/
 .contenedor_pcipal_footer{
     color:rgb(140, 35, 136);
@@ -194,6 +251,12 @@ h2{
         width: 30%;
         margin: 10px;
         padding: 10px;
+            iframe{
+                width: 250px;
+                height: 150px;
+                margin-left: 10%;
+                margin-top: 10px;
+            }
         }
 }
 .header_footer{
@@ -217,45 +280,59 @@ h2{
 
 
 @media screen and (max-width:640px) { 
+    .section_banner{   
+        position: relative;
+            } 
+            .title_header{
+                position: absolute;
+                width: 80%;
+                bottom: 50%;
+                left: 30%;
+                font-size: 1rem;
+            }
     .item_fragancias{
         width: 250px;
     }
     .section_contact {
         flex-direction: column;
-        width: 100%;
+        width: 300px;
         margin-top: 30px;
-        background-color: #FFCAD4;
-        height: 500px;
-        .aside_img{
-            display: none;
-        }
-    
+        height: 500px;   
     }   
-
+    .preguntas_container{
+        details{
+            width: 300px;
+        }
+    }
     .contenedor_pcipal_footer{
         position: relative;
        flex-direction:column; 
        text-align:center;
        .item{
           width: 100%;
-          .contenedor_mapa{
-            position: absolute;
-            width: 200px;
-            margin-top: 5px;
-            left: 20%;
+          iframe{
+            margin-top: 10px;
+            width: 100%;
+            height: 200px;
+          }
         }
        }
-     
-   
-} }
+} 
 
 @media screen and (min-width: 640px) and (max-width: 1280px) { 
+    .section_fragancias{
+        width: 80%;
+        display: flex;
+        }
+  
     .contenedor_pcipal_footer{
-     
-
+        .contenedor_mapa{
+            width: 225px;
+            height: 164px;
+            iframe{
+               width: 100%;
+               margin-left: 0;
+                }
+        }
     }
-    .footer {
-        
-    }
-    
 }
