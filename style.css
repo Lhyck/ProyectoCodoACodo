@@ -1,9 +1,4 @@
-/**
- #40679E
- #1B3C73
- #FFCAD4
- #FF407D
-*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -20,6 +15,7 @@ body{
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
     
 }
 /** Header*/
@@ -28,6 +24,7 @@ body{
     height: 100dvh;
         } 
         .title_header{
+            font-family: "Roboto", sans-serif;
             color: rgb(140, 35, 136);
             position: absolute;
             width: 80%;
@@ -96,51 +93,57 @@ body{
 .section_contact {
     display: flex;
     width: 80%;
-    height: 600px;
+    height: 800px;
     margin: 30px auto;
     margin: auto;
     h2 {
     color: rgb(140, 35, 136);
+    padding: 20px;
     }
 }
-
 
 .form_contact {
     display: flex;
     flex-direction: column;
-    margin: auto;     
+    margin: auto;    
+    label{
+        color:rgb(140, 35, 136);
+    } 
 }
 
 .input-field {
-    border: 1px solid  #1B3C73;
+    border: 1px solid rgb(140, 35, 136);
     font: inherit;
     font-size: 1.125rem;
     padding: .25rem 0;
     margin-top: 5px;
     margin-bottom: 15px;
-    color: aliceblue;
+    color: rgb(140, 35, 136);
 }
 
 .input-field:focus {
     outline: 0;
     border-bottom-width: 3px;
 }
-
+.gen{
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
 .btn-send-message {
     margin-top: 10px;
     padding: 10px;
     font-size: 20px;
-    background-color: #FFCAD4;
+    background-color: rgb(255, 202, 212);
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
     transition: all 250ms;
-    color: #40679E;
+    color:rgb(140, 35, 136);
 }
 
-.btn-send-message:hover,
-.btn-send-message:focus {
-    background-color: #1B3C73;
+.btn-send-message:hover, .btn-send-message:focus {
+    background-color: rgb(255, 202, 212);
     color: #FF407D;
 }
 
@@ -186,7 +189,7 @@ body{
   }
   details summary {  
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 1rem;
     cursor: pointer;
     list-style: none;
@@ -200,15 +203,11 @@ body{
   
   details:hover,
   details[open] {
-    box-shadow: 5px 5px 15px #d9d9d9;
+    box-shadow: 3px 3px 10px;
   }
   
   details[open] {
-    background: #ffffff;
-  }
-  
-  details[open] summary {
-    font-weight: 600;
+    background:#f6f8fa;
   }
   
   details summary::before {
@@ -297,7 +296,10 @@ body{
         flex-direction: column;
         width: 300px;
         margin-top: 30px;
-        height: 500px;   
+        height: 700px;   
+        .gen{
+            gap:0.50rem;
+        }
     }   
     .preguntas_container{
         details{

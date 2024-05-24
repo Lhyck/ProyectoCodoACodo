@@ -136,29 +136,30 @@
                 
         </section>
         <section id="contacto" class="section_contact">
-                <form class="form_contact" action="https://formsubmit.co/caminito@gmail.com" method="POST" id="form1">
-                    <!--Titulo-->
-                    <h2>Escribeme y descubre tu aroma para hechizar !!!</h2>
-                    <br>
-                    <br>
-                    <!--Casilla de nombre-->
-                    <label for="name">NOMBRE</label>
-                    <input class="input-field" type="text" name="name" id="name">
-    
-                    <!--Casilla de email-->
-                    <label for="email">EMAIL</label>
-                    <input class="input-field" type="email" name="email" id="email">
-    
-                    <!--Casilla de texto-->
-                    <label for="message">MENSAJE</label>
-                    <textarea class="input-field" name="message" id="message" cols="30" rows="7"></textarea>
-    
-                    <!--Boton enviar mensaje-->
-                    <input class="btn-send-message" type="submit" id="enviar" value="Enviar">
-                    <input type="hidden" name="_next" value="http://localhost:5502">
-                    <input type="hidden" name="_captcha" value="false">   
-                </form>
-                <script src="/main.js"></script>
+            <form class="form_contact" action="https://formsubmit.co/caminito@gmail.com" method="POST" id="form1">
+                 <h2>ESCRIBINOS Y DESCUBRE TU AROMA PARA HECHIZAR!!!</h2>
+                <label for="name">NOMBRE: </label>
+                <input class="input-field" type="text" name="name" id="name" maxlength="50" required>           
+                <label for="email">EMAIL: </label>
+                <input class="input-field" type="email" name="email" id="email" required>                                
+                <label for="fechaNacimiento">FECHA DE NACIMIENTO:</label>
+                <input class="input-field" type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                <label for="genero">GENERO:</label>
+                <div class="gen"> 
+                    <div><input class="input-field" type="radio" id="hombre" name="genero" value="Hombre" required>
+                    <label for="hombre">Masculino</label></div>
+                    <div><input class="input-field" type="radio" id="mujer" name="genero" value="Mujer" required>
+                    <label for="mujer">Femenino</label></div>
+                    <div><input class="input-field" type="radio" id="binario" name="genero" value="Binario" required>
+                    <label for="binario">Otro</label></div>    
+                </div>
+                <label for="message">MENSAJE</label>
+                <textarea class="input-field" name="message" id="message" cols="30" rows="7"></textarea>
+                <input class="btn-send-message" type="submit" id="enviar" value="Enviar">
+                <input type="hidden" name="_next" value="http://localhost:5502">
+                <input type="hidden" name="_captcha" value="false">   
+            </form>             
+            <script src="/main.js"></script>
         </section>
         <section class="quienes_somos" id="quienes_somos">
             <h2>QUIENES SOMOS</h2>
