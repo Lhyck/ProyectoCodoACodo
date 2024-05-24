@@ -45,3 +45,4 @@ function redirectUrl() {
 
 let boton = document.getElementById("enviar");
 boton.addEventListener("click", onClick);
+
