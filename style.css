@@ -13,17 +13,22 @@
 }
 body{
     min-height: 100dvh;
+    min-width: 100dvh;
 
 }
 /** Header*/
 .section_banner{
+    display: flex;
     position: relative;
     margin-top: 0;
+    margin: 0 auto;
     min-width: 100dvw;
     background-size: cover;
         .img_banner{
             height: 100dvh;
+            width:250dvh ;
             object-fit: cover;
+            
         }
         .img_logo{
             position: absolute;
@@ -79,9 +84,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 20px;
-    opacity: 70%;
-    width: 80%;
+   
     margin: 0 auto;
 }
 .item_fragancias{

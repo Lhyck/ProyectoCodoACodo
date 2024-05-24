@@ -1,3 +1,4 @@
+
 function onClick(event) {
     event.preventDefault();
     this.style.backgroundColor = "violet";
@@ -41,7 +42,6 @@ function cleanForm() {
 function redirectUrl() {
     window.location.href = "http://127.0.0.1:5502/";
 }
-
 
 let boton = document.getElementById("enviar");
 boton.addEventListener("click", onClick);

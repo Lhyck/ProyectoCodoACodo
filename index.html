@@ -9,11 +9,9 @@
 </head>
 <body>
     <header>
-        <div class="section_banner">
+        <div  id="home" class="section_banner">
             <img class="img_banner" src="./assets/FondoRosaFlor.png" alt="banner">
-            <div class="logo">
-                <img class="img_logo" src="./assets/IconAzul.jpg" ></img>
-            </div>
+           
             <div class="title_header"><h1>Aromas que Hechizan </h1></div> 
         </div>        
     </header>
@@ -21,120 +19,85 @@
     <nav class=" clase_fondoNav">
        <a class="nav_item" href="#home"><i></i>Inicio</a>
        <a class="nav_item" href="#fragancias"><i>Fragancias</i></a>
-       <a class="nav_item" href="#catalogo"><i>Catalogo</i></a>
+       <a class="nav_item" href="#catalogo"><i>Catálogo</i></a>
        <a class="nav_item" href="#contacto"><i>Contacto</i></a>
     </nav>
     <main class="contenedor_main">
-        <section  class="section_fragancias">
+        <section  id="fragancias" class="section_fragancias">
             <div class="item_fragancias">
                 <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/FB_IMG_1658612593647~2.jpg">
+                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0015.jpg">
                 </div>
                 <div >
-                    <i>Carolina Herrera </i>
+                    <i>Fragancias Masculinas </i>
                 <br>
-                <small>Familia Olfativa:  </small>
-                <br>
-                <small>Salida: </small>
-                <br>
-                <small>Cuerpo:  </small>
-                <br>
-                <small>Fondo: </small>
-                <br>
-                <small>Presentaciones:  </small>
+                
                 </div>
             </div>
 
             <div class="item_fragancias">
                 <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/FB_IMG_1658612596358~2.jpg">
+                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0014.jpg">
                 </div>
                 <div>
-                    <i>Carolina Herrera </i>
+                    <i>Fragancias Femeninas </i>
                 <br>
-                <small>Familia Olfativa:  </small>
-                <br>
-                <small>Salida: </small>
-                <br>
-                <small>Cuerpo:  </small>
-                <br>
-                <small>Fondo: </small>
-                <br>
-                <small>Presentaciones:  </small>
+               
                 </div>
             </div>
             <div class="item_fragancias">
                 <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20220724-WA0034.jpg">
+                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240127-WA0053.jpg">
                 </div>
                 <div>
-                    <i>Carolina Herrera </i>
+                    <i>Fragancias Exclusivas </i>
                 <br>
-                <small>Familia Olfativa:  </small>
-                <br>
-                <small>Salida: </small>
-                <br>
-                <small>Cuerpo:  </small>
-                <br>
-                <small>Fondo: </small>
-                <br>
-                <small>Presentaciones:  </small>
+              
                 </div>
             </div>
                 
             <div class="item_fragancias">
                 <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20220724-WA0029.jpg">
+                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240118-WA0027.jpg">
                 </div>
                 <div >
-                    <i>Carolina Herrera </i>
+                    <i>Juveniles para ellos</i>
                 <br>
-                <small>Familia Olfativa:  </small>
-                <br>
-                <small>Salida: </small>
-                <br>
-                <small>Cuerpo:  </small>
-                <br>
-                <small>Fondo: </small>
-                <br>
-                <small>Presentaciones:  </small>
+                
                 </div>
             </div>
 
             <div class="item_fragancias">
                 <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20220724-WA0044.jpg">
+                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240127-WA0057.jpg">
                 </div>
                 <div>
-                    <i>Carolina Herrera </i>
+                    <i>Juveniles para ellas </i>
                 <br>
-                <small>Familia Olfativa:  </small>
-                <br>
-                <small>Salida: </small>
-                <br>
-                <small>Cuerpo:  </small>
-                <br>
-                <small>Fondo: </small>
-                <br>
-                <small>Presentaciones:  </small>
+               
                 </div>
             </div>
             <div class="item_fragancias">
-                <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/img_7_1681814330978.jpg">
-                </div>
+               
                 <div>
-                    <i>Carolina Herrera </i>
+   
+                    <!--Casilla de nombre-->
+                    <label for="name">Numero de fragancia </label>
+                    <input class="input-field-fragancia" type="text" name="name-fragancia" id="name-fragancia">           
+                    <button onclick="buscarFragancia()" >Buscar Fragancia</button>
+                   
+                    <div >
+                        <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0019.jpg">
+                    </div>  
+                <label>Nombre:  </label><input>
                 <br>
-                <small>Familia Olfativa:  </small>
+                <label>By: </label><input>
                 <br>
-                <small>Salida: </small>
+                <label>Familia Olfativa:  </label><input>
                 <br>
-                <small>Cuerpo:  </small>
+                <label>Precio: </label><input>
                 <br>
-                <small>Fondo: </small>
-                <br>
-                <small>Presentaciones:  </small>
+                <label>Presentaciones:  </label><input>
                 </div>
             </div>
                 
