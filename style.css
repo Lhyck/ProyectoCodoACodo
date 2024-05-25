@@ -1,197 +1,350 @@
-/**
- #40679E
- #1B3C73
- #FFCAD4
- #FF407D
-*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
 }
-
+body{
+    background-image: url(/assets/foto2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    
+}
 /** Header*/
+.section_banner{   
+    position: relative;
+    height: 100dvh;
+        } 
+        .title_header{
+            font-family: "Roboto", sans-serif;
+            color: rgb(140, 35, 136);
+            position: absolute;
+            width: 80%;
+            bottom: 50%;
+            left: 50%;
+            font-size: 1.5rem;
+        }
 
-.clase_fondo {
-    background-image: url(./assets/FondoAbanRosa.png);
-  
-   
-}
-.clase_titulo_fondo1{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.clase_titulo_fondo2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.clase_titulo{
-    padding: 2rem;
-
-}
-
-.clase_imag{
-    border-radius: 10px;
-    width:100px;
-    height:70px;
-    padding: 1rem;
-   
-
-}
 
 /**Nav**/
-
-
 .clase_fondoNav {
     background-color:  #FFCAD4;
-    
-
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
+    width: 400px;
+    padding: 0.7rem 0.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
-    gap: 0.8rem;
+    justify-content: space-around;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    font-size: 1.25rem;
+        .nav_item:link{
+            text-decoration: none;
+    }
+        .nav_item:hover{
+            color:rgb(140, 35, 136);
+        }
 
 }
 
-/**index*/
-/**home**/
-.clase_imagHome{
-    height:550px;
-    width:1350px;
-    opacity: 85%;
+/* MAIN */
+.contenedor_main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
 }
-
-.FondoHome{
-    background-image: url(./assets/FondoAbanRosa.png);
-    display: block;
-}
-
-
-/**fragancias*/
-.clase_frag1{
-    border-radius: 15px;
-    border-style: groove;
-    border-color: #40679E;
-    width: 300px;
-    height: 200px;
-
-}
-
-.section_Fragancias{
+/**main - fragancias*/
+.section_fragancias{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 20px;
-    background: #FFCAD4;
-    opacity: 70%;
+    margin: 0 auto;
+}
+.item_fragancias, .item_fragancias_buscador{
+    padding: 10px;
+        .clase_frag1{
+            border-radius: 15px;
+            border-style: groove;
+            border-color: #40679E;
+            width: 300px;
+            height: 200px;
+        }
+}
+.item_fragancias_buscador{
+    margin: 20px auto 0;
+    background-color: rgba(231, 204, 230, 0.2);
+    backdrop-filter: blur (5px);
+    color:  rgb(140, 35, 136);
 }
 
-/**contacto**/
-
-
-.half-section {
-    width: 50%;
-}
-
-aside {
-    padding-left: 100px;
-    padding-right: 100px;
-  
-}
-.aside_img{
-    opacity: 60%;
-    margin-top: 45px;
-    border-radius: 15px;
-}
-
-.content {
+/**main - contacto**/
+.section_contact {
     display: flex;
-    height: 100vh;
-    width: 100%;
-    flex-direction: row;
-    margin-top: 30px;
-    background-color: #FFCAD4;
-
-}
-
-h2{
-    color: #1B3C73;
-
-}
-.text-section {
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #FF407D;
-    letter-spacing: 1px;
-}
-
-.title-section {
-    display: flex;
+    width: 80%;
+    margin: 20px auto;
     align-items: center;
-    background-color: #FF407D;
-    color: var(--primary-color-dark);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+    h2 {
+    color: rgb(140, 35, 136);
+    padding: 20px;
+    }
+    iframe{
+        width: 100%;
+        height: 400px;
+        }
 }
 
-form {
+.form_contact {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
-    margin-right: 80px;
-   
+    margin: auto;   
+    width: 500px; 
+    label{
+        color:rgb(140, 35, 136);
+    } 
 }
 
 .input-field {
-    border: 0;
-    background-color:  #1B3C73;
+    border: 1px solid rgb(140, 35, 136);
     font: inherit;
     font-size: 1.125rem;
     padding: .25rem 0;
     margin-top: 5px;
     margin-bottom: 15px;
-    color: aliceblue;
+    color: rgb(140, 35, 136);
 }
 
 .input-field:focus {
     outline: 0;
     border-bottom-width: 3px;
 }
-
 .btn-send-message {
     margin-top: 10px;
     padding: 10px;
     font-size: 20px;
-    background-color: #FFCAD4;
+    background-color: rgb(255, 202, 212);
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
     transition: all 250ms;
-    color: #40679E;
+    color:rgb(140, 35, 136);
 }
 
-.btn-send-message:hover,
-.btn-send-message:focus {
-    background-color: #1B3C73;
+.btn-send-message:hover, .btn-send-message:focus {
+    background-color: rgb(255, 202, 212);
     color: #FF407D;
+}
+
+.quienes_somos{
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(231, 204, 230, 0.2);
+    backdrop-filter: blur (5px);
+    color:  rgb(140, 35, 136);
+    h2 {
+        margin-bottom: 50px;
+        font-size: 1.50rem;
+        font-weight: 600;
+        text-align: center;
+  }
+  p{
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 1.5;
+  };
+}
+.preguntas_container {    
+    max-width: 800px;
+    height: 800px;
+    margin: 50px auto 0 auto;
+    padding: 2rem;
+     h2 {
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        color:  rgb(140, 35, 136);
+  }}
+  details { 
+    background-color: #f6f8fa;
+    width:500px;
+    margin-bottom: 1rem;   
+    border-radius: 8px;  
+    border: 1px solid #d8e0e9;
+    color:  rgb(140, 35, 136);
+    position: relative;  
+  }
+  details summary {  
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  details p {
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    background: #f6f8fa;
+    border-left: 2px solid  rgb(140, 35, 136);
+  }
+  
+  details:hover,
+  details[open] {
+    box-shadow: 3px 3px 10px;
+  }
+  
+  details[open] {
+    background:#f6f8fa;
+  }
+  
+  details summary::before {
+    position: absolute;
+    content: "➤";    
+    font-size: 1.75rem;
+    top: 10px;
+    right: 16px;  
+  }
+  
+  details[open] summary::before {
+    display: inline-block;
+    content: "➤";
+    width: 1em;
+    height: 1em; 
+    animation: rotate-emoji 0.6s ease-in-out both;
+  }
+  
+  @keyframes rotate-emoji {
+    0% {
+       transform: rotate(0);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+  }
+  .catalogo{
+    max-width: 800px;
+    margin:0 auto 10px;
+    h5, h2{
+        color: rgb(140, 35, 136);
+    }
+    h2{
+        text-align: center;
+        padding: 10px;
+    }
+    .img_carr{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+  }
+
+/**Footer**/
+.contenedor_pcipal_footer{
+    color:rgb(140, 35, 136);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    padding: 10px;
+        .item{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 30%;
+        width: 30%;
+        margin: 10px;
+        padding: 10px;
+        }
+}
+.header_footer{
+   text-align: center;
+   padding-bottom: 10px;
+
+}
+.contenedor_menu_footer .footer_list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    a:link{
+        text-decoration: none;
+        color:rgb(140, 35, 136);
+    } 
+    a:visited{
+        color:rgb(140, 35, 136);
+    }   
+}
+
+
+@media screen and (max-width:640px) { 
+    .section_banner{   
+        position: relative;
+            } 
+            .title_header{
+                position: absolute;
+                width: 80%;
+                bottom: 50%;
+                left: 30%;
+                font-size: 1rem;
+            }
+    .item_fragancias{
+        width: 250px;
+    }
+
+    .section_contact {
+        width: 300px;
+        margin-top: 30px; 
+        iframe{
+            height: 200px;
+        } 
+        form{
+            height: 600px;
+        }
+     }   
+    .preguntas_container{
+        details{
+            width: 300px;
+        }
+    }
+    .contenedor_pcipal_footer{
+       position: relative;
+       flex-direction:column; 
+       text-align:center;
+       h2{
+        font-size: 1rem;
+       }
+       .item{
+          width: 100%;
+       }
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) { 
+    .section_fragancias{
+        width: 80%;
+        display: flex;
+        }
+    .section_contact{
+        justify-content: center;
+        iframe{
+            width: 400px;
+        }
+    }
 }

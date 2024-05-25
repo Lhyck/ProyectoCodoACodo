@@ -1,47 +1,34 @@
-function onClick(event) {
+document.getElementById("form1").addEventListener("submit", function(event) {
+    // Prevenir el envío del formulario
     event.preventDefault();
-    this.style.backgroundColor = "violet";
-    console.log("click ...");
-    console.log(event);
-
-    const mensaje = {
-
-        nombre: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        mensaje: document.getElementById('message').value,
-
+    
+    // Obtener los valores de los campos
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var fechaNacimiento = document.getElementById("fechaNacimiento").value;
+    var message = document.getElementById("message").value;
+    
+    // Validar cada campo
+    if (name.trim() === "") {
+        alert("Por favor ingresa tu nombre.");
+        return;
     }
-    console.log(mensaje);
-
-
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-            method: "POST",
-            body: JSON.stringify(mensaje),
-            headers: { "Content-type": "application/json; charset" }
-        })
-        .then((response) => response.json())
-        .then((json) => {
-            console.log(json);
-            Swal.fire(
-                ' Gracias !! Su mensaje se ha enviado con exito ... ',
-                ' Estaremos en contacto a la brevedad '
-
-            );
-            cleanForm();
-
-        })
-        .catch((err) => console.log(err));
-}
-
-function cleanForm() {
-    let formulario = document.getElementById('form1');
-    formulario.reset();
-}
-
-function redirectUrl() {
-    window.location.href = "http://127.0.0.1:5502/";
-}
-
-
-let boton = document.getElementById("enviar");
-boton.addEventListener("click", onClick);
+    
+    if (email.trim() === "") {
+        alert("Por favor ingresa tu correo electrónico.");
+        return;
+    }
+    
+    if (fechaNacimiento.trim() === "") {
+        alert("Por favor ingresa tu fecha de nacimiento.");
+        return;
+    }
+    
+    if (message.trim() === "") {
+        alert("Por favor ingresa un mensaje.");
+        return;
+    }
+    
+    // Si todos los campos están completos, enviar el formulario
+    this.submit();
+});
