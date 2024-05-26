@@ -46,24 +46,23 @@ function redirectUrl() {
 let boton = document.getElementById("enviar");
 boton.addEventListener("click", onClick);
 
-//json de fragancias/
+//json de fragancias
 
-/// ¿El navegador soporta esta función?
-if (typeof(Storage) !== "undefined") {
-// setItem guarda datos en el dispositivo
-localStorage.setItem("apellido", "Perez")
-localStorage.setItem("nombre", "Juan")
-console.log("Datos guardados.")
-} else {
-console.log("Web Storage no soportado.")
-}
-// ¿El navegador soporta esta función?
-if (typeof(Storage) !== "undefined") {
-// getItem recupera datos del dispositivo
-ape = localStorage.getItem("apellido")
-nom = localStorage.getItem("nombre")
-console.log(ape + ", " + nom)
-} else {
-console.log("Web Storage no soportado.")
-}
+document.getElementById('jsonBtn').addEventListener('click', cargarJSON);
+//document.getElementsByName('nameFragancia').addEventListener()
 
+function cargarJSON(){
+    fetch('fragancia.json')
+      .then(function(res){
+    
+        return res.json();
+      })
+      .then(function(data){
+        let html = '';
+        data.forEach(function(fragancia) {
+
+             html +=  ' <li>${fragancia.price}</li> ' ;         
+            document.getElementById('resultado').innerHTML = html ;
+        });
+      })
+}
