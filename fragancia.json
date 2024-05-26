@@ -1,8 +1,8 @@
-{
+{ 
 
 "fragancias" : [
     {
-    "id": "92",
+    "id": 92,
     "name": "Polo Blue",
     "by": "Ralp Lauren",
     "family": "Fouguere ",
@@ -16,7 +16,7 @@
 },
 
 {
-    "id": "137",
+    "id": 137,
     "name": "One Millon ",
     "by":"Paco Rabane",
     "family": "Oriental Amaderada ",
@@ -28,7 +28,7 @@
    "price": "$ 18 mil"
 },
 {
-    " id": "147",
+    " id": 147,
     "name":  "147 Vip Men",
     "by": "Carolina Herrera",
     "family": " Ambar Amaderada",
@@ -42,7 +42,7 @@
 },
 
 {
-    "id": "272",
+    "id": 272,
     "name": "Nina Extra Rouge",
     "by": "Nina Ricci",
     "family": "Floral Frutal",
@@ -56,7 +56,7 @@
 },
 
 {
-    "id": "283",
+    "id": 283,
     "name":  "Fame",
     "by": "Paco Rabane",
     "family": "Floral Frutal",
@@ -69,7 +69,7 @@
 },
 
 {
-    "id": "024",
+    "id": 24,
     "name":  "Elegancia",
     "by": "Carolina Herrera",
     "family":  "Floral",
@@ -86,17 +86,17 @@
 ],
  "bottle": [
     {
-        "id": "1",
+        "id": 1,
         "conten": "30ml"
 
     },
     {
-        "id": "2",
+        "id": 2,
         "conten": "60ml"
 
     },
     {
-        "id": "3",
+        "id": 3,
         "conten": "100ml"
 
     }

@@ -23,83 +23,48 @@
     </nav>
     <main class="contenedor_main">
         <section  id="fragancias" class="section_fragancias">
-            <div class="item_fragancias">
-                <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0015.jpg">
-                </div>
-                <div >
-                    <i>Fragancias Masculinas </i>
-                <br>
-                
-                </div>
-            </div>
-
-            <div class="item_fragancias">
-                <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0014.jpg">
-                </div>
-                <div>
-                    <i>Fragancias Femeninas </i>
-                <br>
-               
-                </div>
-            </div>
-            <div class="item_fragancias">
-                <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240127-WA0053.jpg">
-                </div>
-                <div>
-                    <i>Fragancias Exclusivas </i>
-                <br>
-              
-                </div>
-            </div>
-                
-            <div class="item_fragancias">
-                <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240118-WA0027.jpg">
-                </div>
-                <div >
-                    <i>Juveniles para ellos</i>
-                <br>
-                
-                </div>
-            </div>
-
-            <div class="item_fragancias">
-                <div >
-                    <img class="clase_frag1" src="./assets/Fragancias/IMG-20240127-WA0057.jpg">
-                </div>
-                <div>
-                    <i>Juveniles para ellas </i>
-                <br>
-               
-                </div>
-            </div>
-            <div class="item_fragancias">
-               
-                <div>
-   
-                    
-                    <label for="name">Numero de fragancia </label>
-                    <input class="input-field-fragancia" type="text" name="nameFragancia" id="nameFragancia">           
-                    <button onclick="" >Buscar Fragancia</button>
-                   
+            <div>
+                <div class="item_fragancias">
                     <div >
-                        <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0019.jpg">
-                    </div>  
-                <label>Nombre:  </label><input >
-                <br>
-                <label>By: </label><input>
-                <br>
-                <label>Familia Olfativa:  </label><input>
-                <br>
-                <label>Precio: </label><input>
-                <br>
-                <label>Presentaciones:  </label><input>
+                        <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0015.jpg">
+                    </div>
+                    <div >
+                        <i>Fragancias Masculinas </i>
+                    <br>
+                    
+                    </div>
                 </div>
+
+                <div class="item_fragancias">
+                    <div >
+                        <img class="clase_frag1" src="./assets/Fragancias/IMG-20240109-WA0014.jpg">
+                    </div>
+                    <div>
+                        <i>Fragancias Femeninas </i>
+                    <br>
                 
+                    </div>
+                </div>
+             
+              
             </div>
+            <div>
+                
+                    <div  class="item_fragancias">
+                        <label for="name">Numero de fragancia </label>
+                        <input class="input-field-fragancia" type="text" name="nameFragancia" id="nameFragancia">           
+                        <a href="#" id="jsonBtn" class="button" >Buscar Fragancia</a>
+                       
+                        <div > 
+                            <div id="resultado"></div>
+                        </div>  
+    
+    
+                    </div>
+                    
+            
+            </div>
+            
                 
         </section>
         <section id="contacto" class="section_contact">
@@ -123,7 +88,7 @@
                 <label for="message">MENSAJE</label>
                 <textarea class="input-field" name="message" id="message" cols="30" rows="7"></textarea>
                 <input class="btn-send-message" type="submit" id="enviar" value="Enviar">
-                <input type="hidden" name="_next" value="http://localhost:5502">
+                <input type="hidden" name="_next" value="http://localhost:5502"> 
                 <input type="hidden" name="_captcha" value="false">   
             </form>             
             <script src="/main.js"></script>
